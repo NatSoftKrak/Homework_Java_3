@@ -1,0 +1,72 @@
+1.
+import java.util.Random;
+public class Main {
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        Random random = new Random();
+
+        int a = random.nextInt();
+        int b = random.nextInt();
+
+        System.out.println("Случайное число a: " + a);
+        System.out.println("Случайное число b: " + b);
+
+        System.out.println("Случайное число a: " + a);
+        System.out.println("Случайное число b: " + b);
+
+
+"C:\Program Files\Java\jdk-20\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=56540:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Natalia\Homework_Calculator_Random\out\production\Homework_Calculator_Random Main
+Случайное число a: -803580408
+Случайное число b: 627757163
+Случайное число a: -803580408
+Случайное число b: 627757163
+
+Process finished with exit code 0
+
+
+public  class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
+    public int substract(int a, int b) {
+        return a - b;
+    }
+    public int multiply(int a, int b) {
+        return a * b;
+    }
+    public int divide(int a, int b) {
+        return a / b;
+    }
+
+
+   2.
+
+import java.util.Random;
+public class Main {
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        Random random = new Random();
+
+        int a = random.nextInt();
+        int b = random.nextInt();
+
+        int sum = calculator.add(a, b);
+        int difference = calculator.subtract(a, b);
+        int product = calculator.multiply(a, b);
+        int divide = calculator.divide(a, b);
+
+        System.out.println("сложение: " + sum);
+        System.out.println("вычитание: " + difference);
+        System.out.println("умножение: " + product);
+        System.out.println("деление: " + divide);
+    }
+}
+
+"C:\Program Files\Java\jdk-20\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\lib\idea_rt.jar=58982:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.3\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Natalia\Homework_Calculator_Random\out\production\Homework_Calculator_Random Main
+сложение: 1087937926
+вычитание: -1860450236
+умножение: 335729669
+деление: -2
+
+Process finished with exit code 0
+
